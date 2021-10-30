@@ -61,11 +61,11 @@ function handleResultValidation(){
 
     }
 
-    if(roundWon){
-        statusDisplay.innerHTML = winningMessage()
-        gameActive = false
-        return
-    }
+if(roundWon){
+    statusDisplay.innerHTML = winningMessage()
+    gameActive = false
+    return
+}
 
     let roundDraw = !gameState.includes("");
     if (roundDraw) {
